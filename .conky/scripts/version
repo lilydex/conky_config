@@ -1,0 +1,1 @@
+echo "`cat /etc/os-release | grep -E "^NAME|^VERSION_ID" | awk -F = '{printf("%s "),$2}END{printf("\n")}'`"
